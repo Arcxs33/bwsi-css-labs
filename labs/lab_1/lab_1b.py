@@ -70,7 +70,6 @@ def request_sanitized_operation(prompt:str) -> str:
             print("Invalid operation. Please choose add, subtract, multiply, or divide.")
 
 def main():
-    3
     print(f"===== Simple Calculator =====")
 
     # Ask the user for sample input    
