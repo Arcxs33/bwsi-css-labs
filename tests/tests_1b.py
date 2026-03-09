@@ -37,5 +37,8 @@ def test_invalid_operation():
     with pytest.raises(ValueError, match="Invalid operation. Please choose from 'add', 'subtract', 'multiply', or 'divide'."):
         simple_calculator("", 5, 3)                     # Test for empty operation
 
+def test_singular_cases():
+    assert simple_calculator("subtract", 17, -3) == 20
+
 if __name__ == "__main__":
     pytest.main()
